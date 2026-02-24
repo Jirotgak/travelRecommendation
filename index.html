@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Recommednation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <h1>Travel Recommednation</h1>
-        </div>
-        <ul class="nav-links">
-            <li><a href="#" onclick="showSection('home')">Home</a></li>
-            <li><a href="#" onclick="showSection('about')">About Us</a></li>
-            <li><a href="#" onclick="showSection('contact')">Contact Us</a></li>
-        </ul>
-        <div class="search-container" id="navSearch">
-            <input type="text" id="conditionInput" placeholder="Enter keyword (beach, temple, country)">
-            <button id="btnSearch">Search</button>
-            <button id="btnReset">Reset</button>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+        <a class="navbar-brand fw-bold" href="#">Travel Recommendation</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+            </ul>
+            <div class="d-flex gap-2">
+                <input class="form-control" type="search" id="conditionInput" placeholder="Search">
+                <button class="btn btn-outline-success" id="btnSearch">Search</button>
+                <button class="btn btn-outline-danger" id="btnReset">Reset</button>
+            </div>
         </div>
     </nav>
 
     <section id="home" class="content-section active">
         <div class="hero-content">
             <h1>Explore the World's Best Destinations</h1>
-            <p>We provide curated travel recommendations based on your preferences. Whether you love the serene beaches, ancient temples, or vibrant countries, we have it all.</p>
+            <p>We provide curated travel recommendations based on your preferences. Whether you love the serene beaches,
+                ancient temples, or vibrant countries, we have it all.</p>
             <div class="social-icons">
                 <span>FB</span> | <span>TW</span> | <span>IG</span>
             </div>
@@ -36,7 +40,8 @@
     <section id="about" class="content-section">
         <div class="about-container">
             <h2>About Our Mission</h2>
-            <p>Travel Recommednation is dedicated to helping travelers find their next piece of paradise. Our team of experts scouts the globe to bring you hidden gems.</p>
+            <p>Travel Recommednation is dedicated to helping travelers find their next piece of paradise. Our team of
+                experts scouts the globe to bring you hidden gems.</p>
             <h3>Our Team</h3>
             <div class="team-grid">
                 <div class="team-member"><strong>Jirotgak Gotau</strong> - Lead Researcher</div>
@@ -45,7 +50,7 @@
         </div>
     </section>
 
-    <section id="contact" class="content-section">
+    <!-- <section id="contact" class="content-section">
         <div class="contact-container">
             <h2>Contact Us</h2>
             <form id="contactForm">
@@ -55,10 +60,30 @@
                 <button type="submit">Submit</button>
             </form>
         </div>
-    </section>
+    </section> -->
+
+    <div class="container mt-5 p-4 bg-white shadow-sm">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <div class="row mb-3">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Your Name">
+                </div>
+                <div class="col">
+                    <input type="email" class="form-control" placeholder="Your Email">
+                </div>
+            </div>
+            <div class="mb-3">
+                <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark w-100">Submit</button>
+        </form>
+    </div>
 
     <div id="result-container" class="result-display"></div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./travel_recommendation.js"></script>
 </body>
+
 </html>

@@ -1,9 +1,13 @@
 /* General Reset */
-body, html {
+body,
+html {
     margin: 0;
-    padding: 0;
+    padding: 5;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    color: beige;
+    background-color: #06dcf8;
+    background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dHJhdmVsJTIwc2NlbmVyeXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60');
+    background-size: cover;
 }
 
 /* Task 2: Navbar Styling */
@@ -12,7 +16,8 @@ body, html {
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    background-color: #2e2e2e; /* Dark background from your screenshot */
+    background-color: #2e2e2e;
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
 
@@ -45,25 +50,29 @@ body, html {
 
 #contactForm {
     display: flex;
-    flex-wrap: wrap; /* Allows items to sit side-by-side */
+    flex-wrap: wrap;
+    /* Allows items to sit side-by-side */
     gap: 15px;
     align-items: flex-start;
 }
 
 #contactForm input {
-    flex: 1; /* Makes name and email take equal width */
+    flex: 1;
+    /* Makes name and email take equal width */
     min-width: 200px;
     padding: 10px;
     border: 1px solid #ccc;
 }
 
 #contactForm textarea {
-    width: 100%; /* Message box takes full width below name/email */
+    width: 100%;
+    /* Message box takes full width below name/email */
     padding: 10px;
     border: 1px solid #ccc;
 }
 
-button[type="submit"], #btnSearch {
+button[type="submit"],
+#btnSearch {
     background-color: #2e2e2e;
     color: white;
     padding: 10px 25px;

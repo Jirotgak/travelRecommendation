@@ -4,7 +4,7 @@ function showSection(sectionId) {
         section.classList.remove('active');
     });
     document.getElementById(sectionId).classList.add('active');
-    
+
     // Task 4 Note: Hide search bar on About/Contact
     const searchBar = document.getElementById('navSearch');
     searchBar.style.visibility = (sectionId === 'home') ? 'visible' : 'hidden';
@@ -30,7 +30,7 @@ async function searchRecommendations() {
             results = data.beaches;
         } else if (input.includes('temple')) {
             results = data.temples;
-        } else if (input.includes('countr')) {
+        } else if (input.includes('country')) {
             // For countries, we flatten the cities from the country list
             data.countries.forEach(country => {
                 results.push(...country.cities);
