@@ -1,0 +1,77 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Task 2: Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #2e2e2e; /* Dark background from your screenshot */
+    color: white;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Task 5: Contact Us Styling */
+.contact-container {
+    padding: 50px;
+    background: white;
+    max-width: 900px;
+    margin: 50px auto;
+    border-radius: 5px;
+}
+
+#contactForm {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to sit side-by-side */
+    gap: 15px;
+    align-items: flex-start;
+}
+
+#contactForm input {
+    flex: 1; /* Makes name and email take equal width */
+    min-width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+#contactForm textarea {
+    width: 100%; /* Message box takes full width below name/email */
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+button[type="submit"], #btnSearch {
+    background-color: #2e2e2e;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #444;
+}
